@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Grant permissions to read objects to an AWS account",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::931691961584:root"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::po-settings-module/*"
+        }
+    ]
+}
